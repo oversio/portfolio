@@ -18,13 +18,15 @@ export default function ProjectCard({ study, featured = false }: ProjectCardProp
         }}
       >
         <div className="relative aspect-video overflow-hidden">
-          <Image
-            src={study.cardThumbnail}
-            alt={study.title}
-            fill
-            className="screenshot-blurred object-cover object-top transition-transform duration-500 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 50vw"
-          />
+          {study.cardThumbnail && (
+            <Image
+              src={study.cardThumbnail}
+              alt={study.title}
+              fill
+              className="screenshot-blurred object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 50vw"
+            />
+          )}
         </div>
         <div className={`${featured ? "p-8" : "p-6"}`}>
           <span

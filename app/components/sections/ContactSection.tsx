@@ -44,11 +44,11 @@ export default function ContactSection() {
 
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="mailto:overmartinez@gmail.com"
+              href="mailto:contact@overmartinez.com"
               className="inline-flex items-center gap-2 rounded-lg px-7 py-4 text-base font-semibold text-white transition-colors duration-200"
               style={{ backgroundColor: "#2563eb" }}
             >
-              overmartinez@gmail.com
+              contact@overmartinez.com
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
                   strokeLinecap="round"

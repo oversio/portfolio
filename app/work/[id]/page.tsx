@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { getCaseStudy, getAllCaseStudies } from "@/lib/case-studies"
 import Nav from "@/app/components/Nav"
 import BrowserMockup from "@/app/components/BrowserMockup"
+import CaseStudyHeroBanner from "@/app/components/CaseStudyHeroBanner"
 import TechPill from "@/app/components/TechPill"
 
 export async function generateStaticParams() {
@@ -127,12 +128,22 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ id: 
         }}
       >
         <div className="mx-auto max-w-5xl px-6 py-16 lg:px-8">
-          <BrowserMockup
-            src={study.heroImage}
-            alt={`${study.title} — hero screenshot`}
-            darkChrome={dark}
-            priority
-          />
+          {study.heroImage ? (
+            <BrowserMockup
+              src={study.heroImage}
+              alt={`${study.title} — hero screenshot`}
+              darkChrome={dark}
+              priority
+            />
+          ) : (
+            <CaseStudyHeroBanner
+              title={study.title}
+              role={study.role}
+              period={study.period}
+              tag={study.tag}
+              dark={dark}
+            />
+          )}
         </div>
       </section>
 
@@ -261,9 +272,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ id: 
               return (
                 <div
                   key={module.name}
-                  className={`grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16 ${
-                    isEven ? "" : "lg:[&>*:first-child]:order-2"
-                  }`}
+                  className={`grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16 ${isEven ? "" : "lg:[&>*:first-child]:order-2"
+                    }`}
                 >
                   <div>
                     <div
@@ -429,11 +439,11 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ id: 
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="mailto:overmartinez@gmail.com"
+                href="mailto:contact@overmartinez.com"
                 className="inline-flex items-center gap-2 rounded-lg px-7 py-4 text-base font-semibold text-white transition-colors duration-200"
                 style={{ backgroundColor: "#2563eb" }}
               >
-                overmartinez@gmail.com
+                contact@overmartinez.com
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
                     strokeLinecap="round"
@@ -496,7 +506,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ id: 
                 LinkedIn
               </a>
               <a
-                href="https://github.com/overmartinez"
+                href="https://github.com/oversio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm transition-opacity hover:opacity-60"

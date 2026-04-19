@@ -1,5 +1,6 @@
 import lenosoftData from "@/data/case-studies/lenosoft.json"
 import amberData from "@/data/case-studies/amber.json"
+import uplannerData from "@/data/case-studies/uplanner.json"
 
 export interface CaseStudyModule {
   name: string
@@ -23,8 +24,8 @@ export interface CaseStudy {
   period: string
   projectType: string
   tech: string[]
-  cardThumbnail: string
-  heroImage: string
+  cardThumbnail: string | null
+  heroImage: string | null
   darkTheme: boolean
   challenge: string[]
   solution: {
@@ -34,7 +35,7 @@ export interface CaseStudy {
   outcome: string
 }
 
-const caseStudies: CaseStudy[] = [lenosoftData as CaseStudy, amberData as CaseStudy]
+const caseStudies: CaseStudy[] = [lenosoftData as CaseStudy, amberData as CaseStudy, uplannerData as CaseStudy]
 
 export function getCaseStudy(id: string): CaseStudy | null {
   return caseStudies.find(cs => cs.id === id) ?? null

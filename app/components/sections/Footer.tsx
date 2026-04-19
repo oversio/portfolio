@@ -1,11 +1,6 @@
 export default function Footer() {
   return (
-    <footer
-      style={{
-        backgroundColor: "var(--bg-section)",
-        borderTop: "1px solid var(--card-border)",
-      }}
-    >
+    <footer className="bg-bg-section border-t border-card-border">
       <div className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
@@ -31,14 +26,14 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="mailto:overmartinez@gmail.com"
+              href="mailto:contact@overmartinez.com"
               className="text-sm transition-opacity hover:opacity-60"
               style={{ color: "var(--text-secondary)" }}
             >
               Email
             </a>
           </div>
-          <p className="text-xs" style={{ color: "var(--card-border)" }}>
+          <p className="text-xs text-text-secondary">
             Built with Next.js &amp; Tailwind CSS
           </p>
         </div>

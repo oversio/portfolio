@@ -26,7 +26,7 @@ export default function AboutSection() {
               className="mb-3 text-xs font-semibold tracking-widest uppercase"
               style={{ color: "var(--text-secondary)" }}
             >
-              Who I am
+              About
             </p>
             <h2
               className="mb-8 text-3xl font-semibold lg:text-4xl"
@@ -34,6 +34,17 @@ export default function AboutSection() {
             >
               About
             </h2>
+            <blockquote
+              className="mb-8 border-l-4 pl-5 text-base leading-relaxed lg:text-[17px]"
+              style={{
+                borderColor: "var(--accent)",
+                color: "var(--text-primary)",
+              }}
+            >
+              A great developer&apos;s measure isn&apos;t the technologies they master — it&apos;s
+              the value they deliver. I bring 10+ years of frontend expertise to every project, but
+              my real commitment is to your outcome, not my comfort zone.
+            </blockquote>
             <div
               className="space-y-4 text-base leading-relaxed lg:text-[17px]"
               style={{ color: "var(--text-secondary)" }}
@@ -55,7 +66,14 @@ export default function AboutSection() {
                 understand the full picture when making architectural decisions.
               </p>
             </div>
-            <div className="mt-10 flex flex-wrap gap-2">
+            <p
+              className="mt-10 mb-4 text-sm font-medium"
+              style={{ color: "var(--text-secondary)" }}
+            >
+              I don&apos;t lead with technology — I lead with your problem. But solving it well
+              requires genuine depth across the stack. After 10+ years, that means:
+            </p>
+            <div className="flex flex-wrap gap-2">
               {techStack.map(tech => (
                 <TechPill key={tech} label={tech} />
               ))}

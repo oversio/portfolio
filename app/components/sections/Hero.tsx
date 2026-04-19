@@ -44,7 +44,13 @@ export default function Hero() {
             — not just to launch.
           </h1>
           <p
-            className="mt-6 max-w-xl text-lg leading-relaxed"
+            className="mt-6 text-xl font-medium tracking-tight"
+            style={{ color: "var(--text-primary)" }}
+          >
+            I build solutions. The technology follows.
+          </p>
+          <p
+            className="mt-4 max-w-xl text-lg leading-relaxed"
             style={{ color: "var(--text-secondary)" }}
           >
             10+ years helping startups, product teams, and agencies build scalable web applications

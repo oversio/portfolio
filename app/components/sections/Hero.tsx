@@ -1,3 +1,5 @@
+import CVDownload from "../CVDownload"
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -73,6 +75,7 @@ export default function Hero() {
             >
               Get in Touch
             </a>
+            <CVDownload size="md" />
           </div>
         </div>
       </div>

@@ -35,7 +35,11 @@ export interface CaseStudy {
   outcome: string
 }
 
-const caseStudies: CaseStudy[] = [lenosoftData as CaseStudy, amberData as CaseStudy, uplannerData as CaseStudy]
+const caseStudies: CaseStudy[] = [
+  lenosoftData as CaseStudy,
+  amberData as CaseStudy,
+  uplannerData as CaseStudy,
+]
 
 export function getCaseStudy(id: string): CaseStudy | null {
   return caseStudies.find(cs => cs.id === id) ?? null

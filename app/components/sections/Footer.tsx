@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-bg-section border-t border-card-border">
+    <footer className="bg-bg-section border-card-border border-t">
       <div className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
@@ -33,9 +33,7 @@ export default function Footer() {
               Email
             </a>
           </div>
-          <p className="text-xs text-text-secondary">
-            Built with Next.js &amp; Tailwind CSS
-          </p>
+          <p className="text-text-secondary text-xs">Built with Next.js &amp; Tailwind CSS</p>
         </div>
       </div>
     </footer>

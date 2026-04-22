@@ -6,13 +6,7 @@
   "role": "Lead Frontend Developer",
   "period": "2021 – 2025",
   "projectType": "Freelance",
-  "tech": [
-    "React",
-    "TypeScript",
-    "Next.js",
-    "Zustand",
-    "Tailwind CSS"
-  ],
+  "tech": ["React", "TypeScript", "Next.js", "Zustand", "Tailwind CSS"],
   "cardThumbnail": "/screenshots/lenosoft/dashboard (case study 1).png",
   "heroImage": "/screenshots/lenosoft/dashboard (case study 1).png",
   "darkTheme": false,

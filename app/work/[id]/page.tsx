@@ -272,8 +272,9 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ id: 
               return (
                 <div
                   key={module.name}
-                  className={`grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16 ${isEven ? "" : "lg:[&>*:first-child]:order-2"
-                    }`}
+                  className={`grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16 ${
+                    isEven ? "" : "lg:[&>*:first-child]:order-2"
+                  }`}
                 >
                   <div>
                     <div

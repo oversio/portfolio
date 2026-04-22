@@ -31,14 +31,7 @@ export default function CaseStudyHeroBanner({
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <pattern
-            id="hero-grid"
-            x="0"
-            y="0"
-            width="40"
-            height="40"
-            patternUnits="userSpaceOnUse"
-          >
+          <pattern id="hero-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
             <path
               d="M 40 0 L 0 0 0 40"
               fill="none"
@@ -89,10 +82,7 @@ export default function CaseStudyHeroBanner({
               >
                 {item.label}
               </span>
-              <span
-                className="text-base font-medium"
-                style={{ color: textPrimary }}
-              >
+              <span className="text-base font-medium" style={{ color: textPrimary }}>
                 {item.value}
               </span>
             </div>

@@ -15,7 +15,7 @@ export default function ProjectCardCompact({ study }: ProjectCardCompactProps) {
           borderColor: "var(--card-border)",
         }}
       >
-        <div className="flex-1 min-w-0">
+        <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <span
               className="text-xs font-semibold tracking-widest uppercase"
@@ -23,21 +23,15 @@ export default function ProjectCardCompact({ study }: ProjectCardCompactProps) {
             >
               {study.tag}
             </span>
-            <span
-              className="text-xs"
-              style={{ color: "var(--text-secondary)" }}
-            >
+            <span className="text-xs" style={{ color: "var(--text-secondary)" }}>
               {study.period}
             </span>
           </div>
-          <h3
-            className="mt-1 text-base font-semibold"
-            style={{ color: "var(--text-primary)" }}
-          >
+          <h3 className="mt-1 text-base font-semibold" style={{ color: "var(--text-primary)" }}>
             {study.title}
           </h3>
           <p
-            className="mt-1 text-sm leading-relaxed line-clamp-2"
+            className="mt-1 line-clamp-2 text-sm leading-relaxed"
             style={{ color: "var(--text-secondary)" }}
           >
             {study.subtitle}

@@ -1,4 +1,5 @@
 # Over Martinez
+
 **Desarrollador Frontend Senior**
 
 +34 697 53 55 06 · contact@overmartinez.com · linkedin.com/in/over-martinez · España
@@ -25,6 +26,7 @@ Desarrollador Frontend Senior con más de 10 años de experiencia en la creació
 ## Experiencia Laboral
 
 ### Freelance FullStack Engineer | Remoto
+
 **Ene 2020 – Actualidad**
 
 Desarrollo y entrega de aplicaciones web listas para producción para diversos clientes, liderando la arquitectura frontend y el desarrollo de inicio a fin.
@@ -43,8 +45,9 @@ Desarrollo y entrega de aplicaciones web listas para producción para diversos c
 ---
 
 ### Globant | Santiago, Chile
+
 **Oct 2023 – Sep 2025**  
-*Sr. Web UI Developer — NBCUniversal*
+_Sr. Web UI Developer — NBCUniversal_
 
 - Lideré el desarrollo frontend y definí la arquitectura general del proyecto.
 - Seleccioné y estandaricé el stack tecnológico basado en los requerimientos del negocio.
@@ -57,8 +60,9 @@ Stack: Vite, React, TypeScript, TailwindCSS, Storybook, Playwright Test, TanStac
 ---
 
 ### Globant | Santiago, Chile
+
 **Jul 2022 – Sep 2023**  
-*Sr. Web UI Developer — OneSpan*
+_Sr. Web UI Developer — OneSpan_
 
 - Contribuí al desarrollo de un sistema de seguridad para aplicaciones móviles.
 - Implementé tests unitarios y end-to-end.
@@ -69,6 +73,7 @@ Stack: React, React Router, Material-UI, TanStack Query, TypeScript, Playwright,
 ---
 
 ### Taneq SPA (uPlanner) | Santiago, Chile
+
 **Dic 2016 – May 2022**
 
 #### Software Engineer — Jun 2018 – May 2022
@@ -93,8 +98,9 @@ Stack: JavaScript, AngularJS, Cypress
 ---
 
 ### Solvencia SA | Santiago, Chile
+
 **Dic 2015 – Nov 2016**  
-*Analista Desarrollador*
+_Analista Desarrollador_
 
 - Diseñé y desarrollé un sistema privado de solicitud de pagos integrado con el marcador de llamadas Neotel.
 
